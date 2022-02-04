@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet"> 
+
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="css/main.min.css">
+
+
+    <!--Bootstrap JS-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/rewritingBS.css">
+
+
+    <!--Custom JS-->
+    <script src="js/script.js" defer></script>
+
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+
+
+    <title>Computer World</title>    
+</head>
+<body>
+<div class="wrapper">
+    
+  <!--Header with main Text and 3D effect-->
+  <a id="header" class="anchor"></a>
+  <header>
+    <img src="assets/images/main_image.jpg" class="headerBg">
+    <img src="assets/images/floating_things.png" class="headerFg">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12 d-flex justify-content-center">
+                <h1 class="display-1 text-center text-primary text-wrap">Computer World</h1>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center fixed-bottom mb-3">
+              <a href="#main" id="scrollIcon"><i class="bi bi-chevron-double-down display-3"></i></a>
+            </div>
+        </div>
+    </div>
+  </header>
+
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
+      <div class="container-fluid">
+
+          <!--Navbar Button-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#compWorldRespBar" aria-controls="compWorldRespBar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--Navbar Logo-->
+          <a class="navbar-brand" href="#header">
+              <img src="assets/images/comp_brand.png" id="brandLogo">
+          </a>
+
+          <!--Navbar content-->
+          <div class="collapse navbar-collapse" id="compWorldRespBar">
+              <ul class="navbar-nav w-100 d-lg-flex justify-content-around" id="mainNavbar">
+                  <li class="nav-item rounded px-3 my-1">
+                      <a class="nav-link fs-3" aria-current="page" href="#main">Home</a>
+                  </li>
+                  <li class="nav-item rounded px-3 my-1">
+                      <a class="nav-link fs-3" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item rounded px-3 my-1">
+                      <a class="nav-link fs-3" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+        
+
+  <!--Main Section-->
+  <a id="main" class="anchor"></a>
+  <div class="container bg-dark py-5">
+      <div class="row p-5 justify-content-around align-items-center">
+
+        <!--Slogan-->
+        <div class="col-12 col-lg-5 bg-light p-5 leftObserver m-3">
+            <h2 class="display-2 text-primary">Unleash the beast</h2>
+            <p class="lead fs-3 text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <!--Carousel-->
+        <div class="col-12 col-lg-6 m-3">
+
+          <div id="mainSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            
+            <!--Indicators-->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+              </button>
+              <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 2">
+              </button>
+              <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" aria-label="Slide 3">
+              </button>
+            </div>
+
+            <!--Slider Items-->
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <img src="assets/images/3dmodeling.jpg" class="d-block w-100 img-fluid">
+                <div class="carousel-caption d-none d-md-block bg-light">
+                  <h5 class="display-3">Create it</h5>
+                  <p>Just imagine it, and let your beast do the work.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="assets/images/gaming_setup.jpg" class="d-block w-100 img-fluid">
+                <div class="carousel-caption d-none d-md-block bg-light">
+                    <h5 class="display-3">Game it</h5>
+                    <p>Don't let performance bring you down.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="assets/images/live_it.jpg" class="d-block w-100 img-fluid">
+                <div class="carousel-caption d-none d-md-block bg-light">
+                  <h5 class="display-3">Love it</h5>
+                  <p>Every day, every time.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!--Slider Buttons-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  <!--Services-->
+  <a id="services" class="anchor"></a>
+  <div class="container-fluid py-2 bg-secondary" id="servicesSection">
+    
+    <div class="row justify-content-around g-0">
+
+      <!--Title-->
+      <div class="col-12">
+        <h2 class="display-1 text-center text-primary">Services</h2>
+      </div>
+
+      <!--Cards-->
+      <div class="col-lg-3 d-flex justify-content-center">
+        
+        <div class="card border border-primary my-5 bg-secondary downObserver" style="max-width: 25rem;">
+          <img src="assets/images/maintenance.jpg" class="card-img-top img-fluid">
+          <div class="card-body text-primary">
+            <h5 class="card-title h4 text-center text-uppercase">Maintenance</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, vel!</p>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="#" class="rounded" id="animatedButton">
+                <span>More Info</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-4 d-flex justify-content-center">
+        
+        <div class="card border border-primary my-5 bg-secondary downObserver" style="max-width: 25rem;">
+          <img src="assets/images/pc_upgrades.jpg" class="card-img-top img-fluid">
+          <div class="card-body text-primary">
+            <h5 class="card-title h1 text-center text-uppercase">Upgrades</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, vel!</p>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="#" class="rounded" id="animatedButton">
+                <span>More Info</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 d-flex justify-content-center">
+        
+        <div class="card border border-primary my-5 bg-secondary downObserver" style="max-width: 25rem;">
+          <img src="assets/images/components.jpg" class="card-img-top img-fluid">
+          <div class="card-body text-primary">
+            <h5 class="card-title h4 text-center text-uppercase">Components</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, vel!</p>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="#" class="rounded" id="animatedButton">
+                <span>More Info</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!--Contact-->
+  <a id="contact" class="anchor"></a>
+  <div class="container-fluid p-5 bg-light" id="contactSection">
+    <div class="row justify-content-around">
+
+      <!--Title-->
+      <div class="col-lg-5">
+        <h2 class="display-1 text-primary w-100 text-center text-lg-start">Contact Us</h2>
+      </div>
+
+      <!--Form-->
+      <div class="col-lg-5">
+
+        <form class="w-100">
+          <div class="input-group mb-3">
+
+            <!--Name & Email-->
+            <div class="row w-100 my-3">
+
+              <!--Name-->
+              <div class="col">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control bg-secondary text-primary" placeholder="First name" aria-label="First name">
+                  <span class="input-group-text bg-secondary text-primary">
+                    <i class="bi bi-person-circle"></i>
+                  </span>
+                </div>
+              </div>
+
+              <!--Email-->
+              <div class="col">
+                <div class="input-group mb-3">
+                  <input type="email" class="form-control bg-secondary text-primary" placeholder="Email Address" aria-label="Email Address">
+                  <span class="input-group-text bg-secondary text-primary">
+                    <i class="bi bi-envelope-fill"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!--Service & Budget-->
+            <label for="service" class="form-label w-100 text-primary display-5">What services do you require?</label>
+            <select id="service" class="form-select bg-secondary text-primary">
+              <option>Upgrades</option>
+              <option>Maintenance</option>
+              <option>Components</option>
+            </select>
+            <span class="input-group-text bg-secondary text-primary">
+              <label for="budget" class="form-label">$</label>
+            </span>
+            <span class="input-group-text bg-secondary text-primary">
+              <select id="budget" class="form-select bg-secondary text-primary">
+                <option>&#60;$1000</option>
+                <option>$3000</option>
+                <option>&#62;$5000</option>
+              </select>
+            </span>
+
+            <!--Button-->
+            <button type="submit" class="btn btn-lg btn-outline-secondary w-100 my-3">Submit</button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!--Map-->
+  <div class="container-fluid p-5 bg-secondary">
+    <h2 class="display-1 text-primary w-100 text-center">Visit Us</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9344086340266!2d-74.00557598454496!3d40.74146877932875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle!5e0!3m2!1ses!2spy!4v1643986283808!5m2!1ses!2spy" width="100%" height="360px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+
+  <!--Footer-->
+  <div class="container-fluid bg-dark">
+    <div class="row p-5 justify-content-around">
+
+      <!--Copyright-->
+      <div class="col-lg-5 text-primary">
+        <h2 class="h1">Computer World ©</h2>
+        <p class="lead muted">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, omnis?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, aliquid possimus reprehenderit earum ipsa ullam quis labore exercitationem pariatur illo.</p>
+      </div>
+
+      <!--Logo-->
+      <div class="col-lg-5 d-flex justify-content-around align-items-center display-3">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-telegram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

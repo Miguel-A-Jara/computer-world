@@ -1,0 +1,21 @@
+//Overwriting variables
+$primary: #fff;
+$secondary: #000;
+$dark: #04535c;
+$light: #aa266c;
+
+$headings-font-family: 'Josefin Sans', sans-serif;
+
+$display-font-sizes: (
+  1: 9rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+$display-font-weight: 500;
+
+//Import Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
